@@ -24,14 +24,16 @@ function Header() {
                 <SearchIcon className="header_searchIcon" />
             </div>
             <div className="header_nav">
-                <div className="header_navItem">
-                    <span
-                        className="header_navItemLineOne"
-                    >Hello Guest</span>
-                    <span
-                        className="header_navItemLineTwo"
-                    >Sign In</span>
-                </div>
+                <Link to="/login">
+                    <div className="header_navItem">
+                        <span
+                            className="header_navItemLineOne"
+                        >Hello Guest</span>
+                        <span
+                            className="header_navItemLineTwo"
+                        >Sign In</span>
+                    </div>
+                </Link>
                 <div className="header_navItem">
                     <span
                         className="header_navItemLineOne"
