@@ -4,7 +4,6 @@ import "./Product.css";
 
 function Product({ id, title, image, price, rating }) {
     const [state, dispatch] = useStateValue();
-    console.log(state);
     const addProductToCart = (item) => {
         dispatch({
             type: 'ADD_TO_CART',

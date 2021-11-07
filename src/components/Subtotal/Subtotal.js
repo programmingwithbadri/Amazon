@@ -1,16 +1,8 @@
 import React from 'react'
 import CurrencyFormat from 'react-currency-format';
+import { getCartTotal } from '../../store/reducer';
 import { useStateValue } from '../../store/StateProvider';
 import "./Subtotal.css"
-
-const getCartTotal = (cart) => {
-    let total = 0;
-    cart.forEach(element => {
-        total = total + element.price
-    });
-
-    return total;
-}
 
 function Subtotal() {
     const [{ cart = [] }] = useStateValue();
